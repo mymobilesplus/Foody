@@ -1,0 +1,21 @@
+{% extends "layouts/admin.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles/admin/create.css">
+{% endblock head %}
+
+{% block content %}
+
+  <form method="POST" action="">
+      <div class="title">
+        <h2>Criando Receita</h2>
+        <button type="submit">Editar</button>
+        <button type="submit">Salvar</button>
+      </div>
+
+      <div class="fields">
+      {% include "admin/fields.njk" %}
+      </div>
+  </form> 
+
+{% endblock content %}

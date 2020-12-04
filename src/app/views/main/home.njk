@@ -1,0 +1,44 @@
+{% extends "layouts/main.njk" %}
+
+{% block head%}
+<link rel="stylesheet" href="../styles/main/home.css">
+{% endblock head %}
+
+{% block content %}
+
+     <div class="wrapper">
+
+               <img src="/assets/119236-OQ05QX-268.png" alt="image wrapper">
+
+          <div class="wrapper-info">
+               <p><strong>As melhores receitas</strong></p>
+               <p class="wrapper-content">Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+          </div>
+
+     </div>
+
+     <div class="menu-info">
+          <h2>Mais acessadas</h2>
+     </div>
+
+          <section class="menu">
+                  {% for recipe in recipes %}
+
+               <div class="card-menu">
+                    <div class="card-image">
+                         <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                    </div>
+                    <div class="card-info">
+                         <p>{{recipe.title}}</p>
+                         <p class="author">por {{recipe.author}}</p>
+                    </div>
+                </div>
+
+                </div>
+                      {% endfor %}
+          </section>
+
+          <div class="fake">
+
+          </div>
+{% endblock content %}

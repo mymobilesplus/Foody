@@ -1,0 +1,61 @@
+.title {
+    width: 940px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title button[type="submit"] {
+    background-color: #6558C3;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    cursor: pointer;
+}
+.fields {
+    width: 940px;
+    margin: 30px auto;
+}
+
+input{
+    border: 2px solid #DDDDDD;
+    width: 100%;
+    padding: 16px;
+}
+textarea {
+    border: 2px solid #DDDDDD;;
+    width: 100%;
+    padding: 12px;
+    min-height: 250px;
+    resize: none;
+}
+.links {
+    margin-top: 15px;
+}
+.links a {
+    text-decoration: none;
+    color: #6558C3;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.image,
+.ingredient, 
+.preparation,
+.information {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 10px;
+}
+.ingredient, 
+.preparation,
+.information {
+    margin-top: 30px;
+}

@@ -1,0 +1,28 @@
+.title-about, .title-info, .title-recipes {
+     max-width: 940px;
+     margin: 20px auto;
+} 
+
+.wrapper-about, .wrapper-info, .wrapper-recipes {
+     max-width: 940px;
+     margin: 20px auto;
+     font-size: 20px;
+}
+
+.wrapper-about p, .wrapper-info p, .wrapper-recipes p {
+     margin: 20px auto;
+     font-size: 18px;
+     line-height: 28px;
+}
+
+.footer-info {
+     position: relative;
+     top: 23px;
+}
+
+.footer-info p {
+     text-align: center;
+     font-size: 14px;
+     color: #999999;
+     align-items: center; 
+}

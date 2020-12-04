@@ -1,0 +1,28 @@
+{% extends "layouts/main.njk" %}
+
+{% block head %}
+     <link rel="stylesheet" href="/styles/main/recipesList.css">
+{% endblock head %}  
+
+{% block content %}
+
+   <section class="cards">
+{% for recipe in recipes %}
+
+    <div class="card">
+         <div class="card-image" id="burger.png">
+              <img src="{{recipe.image}}" alt="{{recipe.title}}">
+         </div>
+         <div class="card-info">
+              <p>{{recipe.title}}</p>
+              <p class="author">por {{recipe.author}}</p>
+         </div>
+     </div>
+{% endfor %}
+</section>
+ <div class="fake">
+      
+ </div>
+{% endblock content %}
+
+
